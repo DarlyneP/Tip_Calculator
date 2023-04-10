@@ -21,6 +21,7 @@ console.log(renderer, tipAmount, costPerPerson, reset);
 const tipOptionHandler = (event) => {
     if (bill.value !== null || bill.value !== 'undefined'|| bill.value !== 0) {
         console.log(bill.value);
+        console.log(typeof(bill.value));
         let rate = event.target.textContent;
         rate = rate.replace('%', '');
         tipAmount.textContent = `${ (((rate * 1) *  (bill.value * 1)) / 100).toFixed(2) }$`;
