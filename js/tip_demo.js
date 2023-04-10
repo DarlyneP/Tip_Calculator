@@ -19,7 +19,7 @@ console.log(renderer, tipAmount, costPerPerson, reset);
 //* Handlers
 //& Tip selection
 const tipOptionHandler = (event) => {
-    if (bill.value !== null || bill.value !== 'undefined') {
+    if (bill.value !== null || bill.value !== 'undefined'|| bill.value !== 0) {
         console.log(bill.value);
         let rate = event.target.textContent;
         rate = rate.replace('%', '');
