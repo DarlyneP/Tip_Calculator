@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  
+  <link rel="stylesheet" href="css/reset.css">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+
+  <title>Frontend Mentor | Tip calculator app</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <div>
+        <img src="./images/logo.svg" alt="">
+      </div>
+
+    </header>
+    <main>
+      <div class="calculator__options">
+        <div class="bill">
+          <h3>Bill</h3>
+          <input type="number" name="bill-amount" id="bill-amount">
+        </div>
+        <div class="tip">
+          <h3>Select Tip %</h3>
+          <div class="tip__option-line">
+            <button>5%</button>
+            <button>10%</button>
+            <button>15%</button>
+          </div>
+          <div class="tip__option-line">
+            <button>25%</button>
+            <button>50%</button>
+            <button>Custom</button>
+            <input type="number" name="custom-tip" id="custom-tip" value="Custom">
+          </div>
+        </div>
+
+        <!-- <div class="tip-mobile">
+          <h3>Select Tip %</h3>
+          <div class="tip__option-line">
+            <button>5%</button>
+            <button>10%</button>
+          </div>
+          <div class="tip__option-line">
+            <button>15%</button>
+            <button>25%</button>
+          </div>
+          <div class="tip__option-line">
+            <button>50%</button>
+            <button>Custom</button>
+            <input type="number" name="custom-tip" id="custom-tip" value="Custom">
+          </div>
+        </div> -->
+      
+        <div class="people-number">
+          <h3>Number of People</h3>
+          <input type="number" name="people" id="people" value="">
+        </div>
+        
+
+      </div>
+    <div class="calculator__renderer">
+      <div class="calc-line">
+        <div class="calc-line__details">
+          <h4>Tip Amount</h4>
+          <p>/ person</p>
+        </div>
+        <div class="calc-line__amount">
+          <span class="tip-amount">0.00$</span>
+        </div>
+      </div>
+      <div class="calc-line">
+        <div class="calc-line__details">
+          <h4>Total</h4>
+          <p>/ person</p>
+        </div>
+        <div class="calc-line__amount">
+          <span class="total">0.00$</span>
+        </div>
+      </div>
+      <button class="reset">RESET</button>
+    </div>
+
+    </main>
+
+  </div>
+  
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">Your Name Here</a>.
+  </div>
+  <script src="js/tip_demo.js"></script>
+</body>
+</html>
